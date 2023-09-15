@@ -1,11 +1,15 @@
 import './header.scss'
 import logo from '../../assets/images/logo.svg'
+import menu from '../../assets/images/icon-hamburger.svg'
 
 const Header = () => {
   return (
     <header className='containerHeader'>
         <div className='containerHeader__navbar'>
             <img src={logo} alt="" />
+            <button className='menu__hamburguer'>
+            <img src= {menu} alt=""/>
+            </button>
             <nav>
                 <a>About</a>
                 <a>Careers</a>
