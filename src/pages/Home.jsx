@@ -1,4 +1,4 @@
-import Header from "../componentes/Header.jsx";
+import Header from "../components/Header.jsx";
 
 const Home = () => {
   return (
@@ -6,7 +6,7 @@ const Home = () => {
       {
         //aqui invocan todos los otros componentes
       }
-      <Header />
+      <Header/>
     </>
   );
 };
