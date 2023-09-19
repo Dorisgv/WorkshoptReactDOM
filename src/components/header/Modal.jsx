@@ -1,20 +1,16 @@
 import './header.scss'
 import logo from '../../assets/images/logo.svg'
-import close from '../../assets/images/icon-close.svg' 
-import { useNavigate } from 'react-router-dom'
+import close from '../../assets/images/icon-close.svg'
 
-const Modal = () => {
-    const navigate = useNavigate() 
+const Modal = ({onClose}) => {
 
-const closeModal = () => {
-  navigate('/header')
-}
+
     const link = ["About", "Careers", "Events", "Products", "Support"]
 return (
     <div className='containerHeader__modal'>
         <article>
             <img src={logo} alt="" />
-            <img src={close} alt="" onClick={closeModal}/>
+            <img src={close} alt="" onClick={() => onClose(false)}/> 
         </article>
         <nav>
             {

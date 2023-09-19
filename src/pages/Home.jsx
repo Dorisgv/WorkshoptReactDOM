@@ -1,12 +1,12 @@
-import { ChakraProvider, CSSReset, extendTheme, Box } from '@chakra-ui/react';
+// import { ChakraProvider, CSSReset, extendTheme, Box } from '@chakra-ui/react';
 /* ---------------------------------------------------------------------------- */
 import Header from '../components/header/Header';
 import Gallery from '../components/gallery/Gallery';
 /* ---------------------------------------------------------------------------- */
 // Aqui definimos el tema de Chakra UI si es necesario.
-const theme = extendTheme({
+// const theme = extendTheme({
 
-});
+// });
 /* ---------------------------------------------------------------------------- */
 const Home = () => {
   return (
