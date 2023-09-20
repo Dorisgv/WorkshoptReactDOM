@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Josefin+Sans:wght@300&family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@700&family=Short+Stack&display=swap');
+@import 'breakpoint';
+
+.info {
+    @include laptop {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.info .container {
+    @include tablet {
+        width: 100%;
+    }
+}
+
+.info__img {
+    height: 20rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 2px;
+    
+    background-image: url(../../assets/images/mobile/image-interactive.jpg);
+
+    @include laptop {
+        background-image: url(../../assets/images/desktop/image-interactive.jpg);
+        background-position: center center;
+        margin-right: -20rem;
+        
+    }
+
+    @include tablet {
+        height: 40rem;
+    }
+
+    @include laptop {
+        flex-basis: 60%;
+        height: 40rem;
+    }
+}
+
+
+.info__text {
+    @include laptop {
+        background-color: white;
+        margin-left: -15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: left;
+        padding: 5rem 0 0 8rem;
+        flex-basis: 60%;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    @include desktop {
+        flex-basis: 50%;
+    }
+}
+
+.info__title,
+.our__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.info__title {
+    margin: 4rem 0 1rem;
+}
