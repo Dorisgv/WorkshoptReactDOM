@@ -1,9 +1,9 @@
+import './footer.scss'
 import logo from '../../assets/images/logo.svg'
 import facebook from '../../assets/images/icon-facebook.svg'
 import instagram from '../../assets/images/icon-instagram.svg'
 import pinterest from '../../assets/images/icon-pinterest.svg'
 import twitter from '../../assets/images/icon-twitter.svg'
-import './Footer.css'
 
 
 const Footer = () => {
@@ -22,7 +22,7 @@ const Footer = () => {
             <ul className='footer-container-navegation-list'>
               {
                 linkList.map((linkList, index)=>(
-                  <a href="#" key={index}>{linkList}</a>
+                  <a className='footer-container-navegation-link' href="#" key={index}>{linkList}</a>
                 ))
               }
             </ul>

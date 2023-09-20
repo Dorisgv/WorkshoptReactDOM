@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Josefin+Sans:wght@300&family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@700&family=Short+Stack&display=swap');
+@import 'breakpoint';
+
+.footer-container{
+    background-color: black;
+    padding: 3rem 0;
+    width: 100%;
+    position: absolute;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
+.footer-container-logo{
+    text-align: center;
+    color: white;
+
+    img {
+        margin-bottom: 2rem;
+        
+    }
+
+    @include laptop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+       
+        img {
+            margin-bottom: 0;           
+        }
+    }
+}
+
+.footer-container-navegation-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include laptop {
+        flex-direction: row;
+        gap: 2rem;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        padding: 1rem 0;        
+    }
+}
+
+.footer-container-navegation-link{
+    color: white;
+    margin: 1rem 0;
+    font-weight: bold;
+    text-decoration: none;
+    @include laptop {
+        margin: 0;
+        &:hover {
+            border-bottom: 2px solid ;
+            margin-bottom: -2px;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer-container-socialmedia {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    @include laptop {
+        justify-content: flex-end;
+        margin-top: 0;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        img {
+            display: block;
+        }
+
+        a:hover {
+            border-bottom: 2px solid;
+            margin-bottom: -10px;
+        }
+    }
+}
+
+.footer-container-copyright {
+    margin: 0;
+    color: gray;
+    
+    @include laptop {
+        grid-row: 2 / 3;
+        text-align: right;
+        color: gray;
+        margin-right: 1rem;
+    }
+}
