@@ -56,7 +56,7 @@
 @media (max-width: 375px){
     .containerHeader{
         width: 100% !important;
-        height: 750px !important;
+        height: 700px !important;
         padding: 10px !important;
         background-image: url('/src/assets/images/mobile/image-hero.jpg') !important;
         background-size: contain;
@@ -67,8 +67,8 @@
         &__navbar{
             justify-content: space-between;
             img{
-                margin-left: 0;
-                width: 45%;
+                margin-left: 1rem !important;
+                width: 35%;
 
             }
             nav{
@@ -77,21 +77,23 @@
             
         }
         &__text {
-            width: 93%;
-            margin-top: 160px;
-            margin-left: 0;
-            border: 1px solid white;
-            //padding: 18px;
+            width: 90% !important;
+            margin-top: 160px !important;
+            margin-left: 0 !important;
+            border: 1px solid white !important;
+            padding: px !important;
             color: white;
-            font-size: 2.7em;
-            font-family: 'Josefin Sans', sans-serif;
-
+            font-size: 2.5em !important;
+            font-family: 'Josefin Sans' , sans-serif !important;
+            
+            
+            
         }
         
     }
     .menu__hamburguer{
         display: block;
-        margin-right: 30px;
+        margin-right: 10px;
         background-color: transparent;
         border: none;
         img{
